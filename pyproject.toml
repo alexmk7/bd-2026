@@ -1,0 +1,17 @@
+[project]
+name = "bd-2026"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel",
+    "joblib",
+    "numpy",
+    "pandas",
+    "minio",
+    "pyspark",
+    "requests",
+    "lxml",
+    "hdfs",
+    "tqdm",
+    "kazoo"
+]
