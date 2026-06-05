@@ -8,10 +8,11 @@ dependencies = [
     "numpy",
     "pandas",
     "minio",
-    "pyspark",
+    "pyspark==4.0.1",
     "requests",
     "lxml",
     "hdfs",
     "tqdm",
-    "kazoo"
+    "kazoo",
+    "pyarrow"
 ]
