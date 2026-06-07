@@ -8,16 +8,16 @@
 Котируемая валюта: `USDT` 
 
 
-Дан parquet-файл с тиковыми сделками биржи Binance по одной торговой паре. Каждая строка соответствует одной сделке и содержит поля:
+Дан parquet-файл с тиковыми сделками биржи Binance по одной торговой паре. Каждая строка соответствует одной сделке, схема parquet-файла:
 
-| Поле           | Тип     |
-| -------------- | ------- |
-| trade_id       | int64   |
-| price          | float64 |
-| quantity       | float64 |
-| quote_qty      | float64 |
-| timestamp      | int64   |
-| is_buyer_maker | bool    |
+| Поле           | Тип            |
+| -------------- | -------------- |
+| trade_id       | uint64         |
+| timestamp      | timestamp[ns]  |
+| price          | double         |
+| quantity       | double         |
+| quote_qty      | double         |
+| is_buyer_maker | bool           |
 
 Размер файла может достигать нескольких гигабайт. 
 
